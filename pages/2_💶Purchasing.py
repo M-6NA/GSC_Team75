@@ -278,6 +278,21 @@ def wrld_map_and_suplr_report_section():
         # Display the HTML table in Streamlit using markdown
         st.markdown(table_html, unsafe_allow_html=True)
     
+    def display_quant_per_unit():
+        st.markdown(
+        f"""
+        <div class="column1" style="background-color: #f4f5f7; text-align: center; border-radius: 10px; padding-left: 10px; padding-top: 5px; margin-top: 10px;">
+            <p style="text-align: left; font-weight: bold; font-family: 'Consolas', monospace;">Quantities per Unit: </p>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 10px;">
+                <div style="font-weight: normal; font-family: 'Consolas', monospace; font-size: 15px; text-align: left;">Content drum (liter): <span style="color: #5eb889;">250</span></div>
+                <div style="font-weight: normal; font-family: 'Consolas', monospace; font-size: 15px; text-align: left;">Content IBC (liter): <span style="color: #5eb889;">1,000</span></div>
+                <div style="font-weight: normal; font-family: 'Consolas', monospace; font-size: 14px; text-align: left;">Content tank truck (liter): <span style="color: #5eb889;">30,000</span></div>
+                <div style="font-weight: normal; font-family: 'Consolas', monospace; font-size: 15px; text-align: left;">Pallets per FTL: <span style="color: #5eb889;">30</span></div>
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
     st.subheader("Worldwide Suppliers")
     # ::::::::::: DYNAMIC TABS :::::::::::
@@ -302,6 +317,7 @@ def wrld_map_and_suplr_report_section():
             with col2:
                 round_report_data = MANUAL_SUPPLIER_DF[MANUAL_SUPPLIER_DF['Round'] == i]
                 supplier_report(round_report_data)
+                display_quant_per_unit()
                 
 wrld_map_and_suplr_report_section()
 
