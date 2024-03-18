@@ -18,7 +18,7 @@ ROUND_COLORS = {
     -1: "#06d6a0",  #219ebc
     0: "#8338ec",   #126782
     1: "#fd9e02",   #023047
-    2: "#fd9e02",   #ffb703
+    2: "#126782",   #ffb703
     3: "#8ecae6",   #fd9e02
     4: "#219ebc",   #8338ec
     5: "#126782",   #06d6a0
@@ -39,21 +39,21 @@ PRODUCT_COLORS = {
 }
 
 SALES_OBSOLETE_PROD = {
-    'rounds': ['-2', '-1', '0', '1'],
-    'values': [6.5, 13.7, 13.7, 13.7],
+    'rounds': ['-2', '-1', '0', '1', '2'],
+    'values': [6.5, 13.7, 13.7, 13.7, 5.6],
 }
 
 SALES_SERVICE_LEVEL = {
-    'rounds': ['-2', '-1', '0', '1'],
-    'values': [85.5, 87.1, 87.1, 87.1],
+    'rounds': ['-2', '-1', '0', '1', '2'],
+    'values': [85.5, 87.1, 87.1, 87.1, 95.7],
 }
 
 SUPPLY_CHAIN_STOCK_COMPONENTS_WEEKS_DATA = {
     'rounds': ROUND_TEXT,
-    'values': [3.6, 4.4, 4.4, 4.4],
+    'values': [3.6, 4.4, 4.4, 4.4, 4.3],
 }
 
 SUPPLY_CHAIN_STOCK_PRODUCT_WEEKS_DATA = {
     'rounds': ROUND_TEXT,
-    'values': [2.4, 3.3, 3.3, 3.3],
+    'values': [2.4, 3.3, 3.3, 3.3, 3.1],
 }
