@@ -540,13 +540,16 @@ def components_section():
                 use_container_width=True
             ) 
 
-        tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
+        tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9 = st.tabs([
             'Orange',
             'Mango',
             'PET',
             'Pack 1L',
             'Vitamin C',
             'Açaí',
+            'Bag',
+            'Capsule (orange)',
+            'Capsule (red)'
         ])
 
         slider_threshold = st.select_slider(
@@ -572,6 +575,16 @@ def components_section():
 
         with tab6:
             component_info_table('Açaí')
+
+        with tab7:
+            component_info_table('Bag')
+
+        with tab8:
+            component_info_table('Capsule (orange)')
+        
+        with tab9:
+            component_info_table('Capsule (red)')
+
 
     col1, col2 = st.columns(2, gap = "small")
 

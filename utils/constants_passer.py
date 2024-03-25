@@ -10,7 +10,11 @@ COMPONENT_COLORS = {
     "Orange": "#fb8500",
     "Mango": "#8ac926",
     "Vitamin C": "#ff595e",
-    "Açaí": "#c792ea"
+    "Açaí": "#c792ea",
+    "Bag": "#d6eaf8",
+    "Capsule": "#ffc0cb",
+    "Capsule (orange)": "#ffc000",
+    "Capsule (red)": "#c70039",
 }
 
 ROUND_COLORS = {
@@ -36,24 +40,26 @@ PRODUCT_COLORS = {
     "Fressie Orange/Mango 1 liter": "#f4a261",
     "Fressie Orange/Mango+C 1L": "#e76f51",
     "Fressie Orange/Açai PET": "#2ecc71",
+    "Frespressie Orange/Açai": "#b2d03f",
+    "Frespressie Orange": "#9b30ff"
 }
 
 SALES_OBSOLETE_PROD = {
-    'rounds': ['-2', '-1', '0', '1', '2'],
-    'values': [6.5, 13.7, 13.7, 13.7, 5.6],
+    'rounds': ['-2', '-1', '0', '1', '2', '3'],
+    'values': [6.5, 13.7, 13.7, 13.7, 5.6, 2.7],
 }
 
 SALES_SERVICE_LEVEL = {
-    'rounds': ['-2', '-1', '0', '1', '2'],
-    'values': [85.5, 87.1, 87.1, 87.1, 95.7],
+    'rounds': ['-2', '-1', '0', '1', '2', '3'],
+    'values': [85.5, 87.1, 87.1, 87.1, 95.7, 87.8],
 }
 
 SUPPLY_CHAIN_STOCK_COMPONENTS_WEEKS_DATA = {
     'rounds': ROUND_TEXT,
-    'values': [3.6, 4.4, 4.4, 4.4, 4.3],
+    'values': [3.6, 4.4, 4.4, 4.4, 4.3, 4.9],
 }
 
 SUPPLY_CHAIN_STOCK_PRODUCT_WEEKS_DATA = {
     'rounds': ROUND_TEXT,
-    'values': [2.4, 3.3, 3.3, 3.3, 3.1],
+    'values': [2.4, 3.3, 3.3, 3.3, 3.1, 1.9],
 }

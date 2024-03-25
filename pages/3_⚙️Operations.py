@@ -332,6 +332,9 @@ def mixers_fillers_section():
         for round_val, tab, in zip(unique_values, tabs):
             with tab:
                 plot_bottling_line_usage(round_val, 'Swiss Fill 1')
+                
+                if round_val == 3:
+                    plot_bottling_line_usage(round_val, 'Cup Canon 1.3 TDX')
 
     with col2:
         plot_avg_lot_size_per_round()
